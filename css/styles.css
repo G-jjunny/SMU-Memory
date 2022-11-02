@@ -11881,6 +11881,7 @@ section#contact {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 section#contact .section-heading {
   color: #fff;
