@@ -55,7 +55,7 @@ const divspyEls = document.querySelectorAll("div.his-scroll-spy");
 divspyEls.forEach(function (divspyEls) {
   new ScrollMagic.Scene({
     triggerElement: divspyEls, //보여짐 여부를 감시할 요소를 지정
-    triggerHooks: 0.8,
+    triggerHooks: 1,
   })
     .setClassToggle(divspyEls, "show")
     .addTo(new ScrollMagic.Controller());
