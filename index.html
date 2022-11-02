@@ -18,6 +18,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Noto+Sans+KR&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <!--  -->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- scroll magic -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -48,18 +50,18 @@
             <div class="container">
                 <div class="masthead-subheading">Celebrating the 30th Anniversary of Semyung University</div>
                 <div class="masthead-heading text-uppercase">Welcome to Memory of Semyung</div>
-                <a class="btn btn-primary btn-xl text-uppercase"href="#services">introduce</a>
+                <a class="btn btn-outline-primary btn-xl text-uppercase"href="#services">introduce</a>
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section" id="services">
+        <section class="page-section scroll-spy" id="services">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center back-to-position">
                     <h2 class="section-heading text-uppercase">Project "추억속으로"</h2>
                     <h3 class="section-subheading2 text-muted">세명대학교 창립 30주년을 맞아 우리 학교의 역사와 관련 데이터들을 한 눈에 보기 쉽도록 제작한 페이지 입니다</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-6">
+                <div class="row text-center ">
+                    <div class="col-md-6 back-to-position to-right">
                         <span>
                             <i><img src="assets/img/free-icon-business-presentation-66134.png" width="180px"></i>
                         </span>
@@ -68,7 +70,7 @@
                             <p class="text-muted">우리 세명대학교의 관련된 데이터를 텍스톰으로 수집하여 R을 이용해 분석 및 시각화를 하고 웹 페이지에 데이터 분석 화면을 역대 총장님 재임기간 별로 학교의 사진, 역사와 함께 보여주는 프로젝트입니다.</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 back-to-position to-left">
                         <span >
                             <!-- 여기가 아래 두 개 svg파일 링크 이 아리 파일 바구면 이미지 바뀜 찾아서 규격 맞춰서 넣을것 -->
                             <!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
@@ -95,27 +97,27 @@
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">SMU history</h2>
+                <div class="text-center his-scroll-spy">
+                    <h2 class="section-heading text-uppercase back-to-position">SMU history</h2>
                     <!-- <h3 class="section-subheading text-muted">여기를 총장소개 말고 학교 역사? 간단하게 사진이랑 보여주면 될듯</h3> -->
                 </div>
                 <ul class="timeline">
-                    <li>
+                    <li class="li-scroll-spy">
                         <!-- 이 부분 스타일시트 찾아서 이미지 크기 조절해서 이미지 첨부하고
                         간단하게 학교 역사소개까지 (학교홈페이지 참고하면 그런 느낌으로) 애매하면 카톡ㄱㄱ -->
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/president/본관.png" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid" src="assets/img/president/본관.png" alt="..." /></div>
+                        <div class="timeline-panel back-to-position to-left">
                             <div class="timeline-heading">
                                 <h4>1990.11.28</h4>
                                 <h4 class="subheading">세명대학교 설립</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">1990년 세명대학으로 설립되었으며, 1991년 爲世光明(세상을 밝게 비추는 인재를 양성한다는 뜻)의 건학이념으로 세명대학교가 개교하였고 1992년 일반대학으로 개편되며 현재의 교명으로 변경하였다.</p></div>
+                            <div class="timeline-body "><p class="text-muted">1990년 세명대학으로 설립되었으며, 1991년 爲世光明(세상을 밝게 비추는 인재를 양성한다는 뜻)의 건학이념으로 세명대학교가 개교하였고 1992년 일반대학으로 개편되며 현재의 교명으로 변경하였다.</p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
+                    <li class="timeline-inverted li-scroll-spy">
                         <!-- 이미지 클래스img-fluid 보면 이미지크기 조절할수있음-->
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/president/한방병원.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid" src="assets/img/president/한방병원.jpg" alt="..." /></div>
+                        <div class="timeline-panel back-to-position to-right">
                             <div class="timeline-heading">
                                 <h4>1996.05.16</h4>
                                 <h4 class="subheading">세명대 부속 제천한방병원 개원</h4>
@@ -127,9 +129,9 @@
                             </p></div>
                         </div>
                     </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/president/노무현사료관.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                    <li class="li-scroll-spy">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid" src="assets/img/president/노무현사료관.jpg" alt="..." /></div>
+                        <div class="timeline-panel back-to-position to-left">
                             <div class="timeline-heading">
                                 <h4>2004.10.20</h4>
                                 <h4 class="subheading">노무현 대통령 본교방문(지역혁신대학)</h4>
@@ -144,9 +146,9 @@
                             </p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/president/20주년.jpg"width="350px" alt="..." /></div>
-                        <div class="timeline-panel">
+                    <li class="timeline-inverted li-scroll-spy">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid" src="assets/img/president/20주년.jpg"width="350px" alt="..." /></div>
+                        <div class="timeline-panel back-to-position to-right">
                             <div class="timeline-heading">
                                 <h4>2011.05.23</h4>
                                 <h4 class="subheading">세명대 개교 20주년 기념행사 개최</h4>
@@ -160,9 +162,9 @@
                                </p></div>
                         </div>
                     </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/president/민송기념관.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                    <li class="li-scroll-spy">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid" src="assets/img/president/민송기념관.jpg" alt="..." /></div>
+                        <div class="timeline-panel back-to-position to-left">
                             <div class="timeline-heading">
                                 <h4>2011.04.21</h4>
                                 <h4 class="subheading">민송기념관 개관식</h4>
@@ -177,9 +179,9 @@
                                 </p></div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/president/하노이.jpg"width="340" alt="..." /></div>
-                        <div class="timeline-panel">
+                    <li class="timeline-inverted li-scroll-spy">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid" src="assets/img/president/하노이.jpg"width="340" alt="..." /></div>
+                        <div class="timeline-panel back-to-position to-right">
                             <div class="timeline-heading">
                                 <h4>2017.11.28</h4>
                                 <h4 class="subheading">세명대 베트남 하노이 홍보관 개관</h4>
@@ -195,10 +197,10 @@
                                 </p></div>
                         </div>
                     </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid"
+                    <li class="li-scroll-spy">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid"
                                 src="assets/img/president/세네뜨리아.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel back-to-position to-left">
                             <div class="timeline-heading">
                                 <h4>2019.09.01</h4>
                                 <h4 class="subheading">세명대 학교기업 '세네뜨리아' 오픈</h4>
@@ -215,9 +217,9 @@
                             </div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/president/정문.jpg"width="340" alt="..." /></div>
-                        <div class="timeline-panel">
+                    <li class="timeline-inverted li-scroll-spy">
+                        <div class="timeline-image back-to-position"><img class="rounded-circle img-fluid" src="assets/img/president/정문.jpg"width="340" alt="..." /></div>
+                        <div class="timeline-panel back-to-position to-right">
                             <div class="timeline-heading">
                                 <h4>2020.03.11</h4>
                                 <h4 class="subheading">재학생 전원에게 '코로나19 극복 장학금' 지급</h4>
@@ -378,7 +380,7 @@
                 </div>
             </div>
         </section>
-        <section class="page-section" id="contact">
+        <section class="page-section scroll-spy" id="contact">
                     <div class="container">
                         <div class="text-center">
                             <h2 class="section-heading text-uppercase">project team "B.W.C"</h2>
@@ -389,7 +391,7 @@
                                 <div class="team-member">
                                     <img class="mx-auto rounded-circle" src="assets/img/team/정경준1.jpg" alt="..." />
                                     <h4 class="text-muted2">정경준</h4>
-                                    <p class="text-muted2">팀장, 웹 페이지 제작</p>
+                                    <p class="text-muted2">팀장, 웹 페이지 기획, 제작</p>
                                     <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
                                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a> -->
@@ -399,7 +401,7 @@
                                 <div class="team-member">
                                     <img class="mx-auto rounded-circle" src="assets/img/team/김희도.png" alt="..." />
                                     <h4 class="text-muted2">김희도</h4>
-                                    <p class="text-muted2">팀원, 웹 페이지 제작</p>
+                                    <p class="text-muted2">팀원, 웹 페이지 페이지 기획, 제작</p>
                                     <!-- <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
                                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                                     <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a> -->

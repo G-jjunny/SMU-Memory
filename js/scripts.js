@@ -40,3 +40,33 @@ window.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+
+const spyEls = document.querySelectorAll("section.scroll-spy");
+spyEls.forEach(function (spyEls) {
+  new ScrollMagic.Scene({
+    triggerElement: spyEls, //보여짐 여부를 감시할 요소를 지정
+    triggerHooks: 0.8,
+  })
+    .setClassToggle(spyEls, "show")
+    .addTo(new ScrollMagic.Controller());
+});
+
+const divspyEls = document.querySelectorAll("div.his-scroll-spy");
+divspyEls.forEach(function (divspyEls) {
+  new ScrollMagic.Scene({
+    triggerElement: divspyEls, //보여짐 여부를 감시할 요소를 지정
+    triggerHooks: 0.8,
+  })
+    .setClassToggle(divspyEls, "show")
+    .addTo(new ScrollMagic.Controller());
+});
+
+const lispyEls = document.querySelectorAll("li.li-scroll-spy");
+lispyEls.forEach(function (lispyEls) {
+  new ScrollMagic.Scene({
+    triggerElement: lispyEls, //보여짐 여부를 감시할 요소를 지정
+    triggerHooks: 1,
+  })
+    .setClassToggle(lispyEls, "show")
+    .addTo(new ScrollMagic.Controller());
+});
