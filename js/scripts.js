@@ -61,6 +61,7 @@ divspyEls.forEach(function (divspyEls) {
     .addTo(new ScrollMagic.Controller());
 });
 
+// history 부분 scrollspy
 const lispyEls = document.querySelectorAll("li.li-scroll-spy");
 lispyEls.forEach(function (lispyEls) {
   new ScrollMagic.Scene({

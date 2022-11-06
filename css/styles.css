@@ -121,8 +121,8 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
-.show .back-to-position.delay-1{
-  transition-delay: .3s;
+.show .back-to-position.delay-1 {
+  transition-delay: 0.3s;
 }
 
 hr {
@@ -11962,13 +11962,14 @@ header.masthead .masthead-heading {
   /* padding-left: 33%; */
   max-width: 200px;
   margin: auto;
-  /* margin-left: 0px;
-  margin-right: 0px; */
+  border-radius: 5px 5px 0 0;
+  box-shadow: 5px 5px 10px gray;
 }
 #portfolio .portfolio-item .portfolio-link {
   /* position: relative; */
   position: relative;
   display: block;
+  border-radius: 5px 5px 0 0;
   /* margin: auto 0; */
   /* padding: 10px; */
 }
@@ -11999,6 +12000,9 @@ header.masthead .masthead-heading {
   padding: 0.7rem 0.5rem 1rem 0.5rem;
   text-align: center;
   background-color: #ffff;
+  /* background-color: #dcdcdc; */
+  border-radius: 0 0 5px 5px;
+  box-shadow: 5px 5px 10px gray;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.2rem;
@@ -12226,6 +12230,7 @@ header.masthead .masthead-heading {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
+    /* width: 100%; */
     width: 35%;
     padding: 0 30px 20px 20px;
     text-align: left;
