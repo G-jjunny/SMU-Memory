@@ -669,11 +669,8 @@ progress {
 
 /* 포폴이미지 크기 여기서 조절 */
 .img-fluid2 {
-  /* max-width: 100%; */
-  /* height: auto; */
   width: 200px;
   height: 210px;
-  /* max-height: 100%; */
 }
 .img-fluid3 {
   /* max-width: 100%; */
@@ -991,6 +988,7 @@ progress {
   .col-lg-2-1 {
     width: 50%;
   }
+  /* 데이터 분석페이지 모바일 */
 }
 
 @media (min-width: 576px) {
@@ -7819,9 +7817,15 @@ fieldset:disabled .btn {
 .mb-4 {
   margin-bottom: 1.5rem !important;
 }
+.mb-4-1 {
+  margin-bottom: 2rem !important;
+}
 
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+.mb-6 {
+  margin-bottom: 5rem !important;
 }
 
 .mb-auto {
@@ -11781,11 +11785,21 @@ p {
   font-family: "Ubuntu", sans-serif;
   /* font-family: 'Noto Sans KR', sans-serif; */
 }
+
+/* 화면500px */
 @media (max-width: 500px) {
   .page-section h2.section-heading,
   .page-section .section-heading .h2 {
     font-size: 2rem;
   }
+  /* .img-fluid2 {
+    width: 100%;
+    height: fit-content;
+  }
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  } */
 }
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
@@ -11971,6 +11985,10 @@ header.masthead .masthead-heading {
   border-radius: 5px 5px 0 0;
   box-shadow: 5px 5px 10px gray;
 }
+#portfolio .portfolio-item:hover {
+  scale: 1.05;
+  transition: 0.5s;
+}
 #portfolio .portfolio-item .portfolio-link {
   /* position: relative; */
   position: relative;
@@ -12037,6 +12055,14 @@ header.masthead .masthead-heading {
   font-size: 3rem;
   line-height: 3rem;
   /* font-family: 'Noto Sans KR', sans-serif; */
+}
+@media (max-width: 500px) {
+  .portfolio-modal .modal-content h2,
+  .portfolio-modal .modal-content .h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    /* font-family: 'Noto Sans KR', sans-serif; */
+  }
 }
 .portfolio-modal .modal-content p.item-intro {
   /* font-style: italic; */
@@ -12169,6 +12195,7 @@ header.masthead .masthead-heading {
 }
 
 @media (min-width: 268px) {
+  /* 모바일 화면 타임라인 */
   .timeline:before {
     left: 10%;
   }
