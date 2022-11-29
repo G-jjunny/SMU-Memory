@@ -11774,12 +11774,18 @@ p {
   padding: 10rem 0;
 }
 .page-section h2.section-heading,
-.page-section .section-heading.h2 {
+.page-section .section-heading .h2 {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 2rem;
   font-family: "Ubuntu", sans-serif;
   /* font-family: 'Noto Sans KR', sans-serif; */
+}
+@media (max-width: 500px) {
+  .page-section h2.section-heading,
+  .page-section .section-heading .h2 {
+    font-size: 2rem;
+  }
 }
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
@@ -11951,7 +11957,7 @@ header.masthead .masthead-heading {
     margin-bottom: 5rem;
   }
   header.masthead .masthead-heading {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 7rem;
@@ -12168,21 +12174,21 @@ header.masthead .masthead-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
   }
   .timeline > li .timeline-panel {
     /* float: left; */
     float: right;
-    width: 70%;
-    padding: 140px 20px 100px 30px;
+    width: 95%;
+    padding: 210px 20px 20px 30px;
     /* text-align: right; */
     text-align: left;
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 180px;
-    height: 140px;
-    margin-left: -200px;
+    width: 280px;
+    height: 190px;
+    margin-left: -150px;
   }
   .timeline > li .timeline-image h4,
   .timeline > li .timeline-image .h4 {
@@ -12192,8 +12198,8 @@ header.masthead .masthead-heading {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
-    width: 70%;
-    padding: 140px 20px 0 20px;
+    width: 95%;
+    padding: 210px 20px 20px 30px;
     text-align: left;
   }
   .team-member {
@@ -12219,27 +12225,34 @@ header.masthead .masthead-heading {
     left: 50%;
   }
   .timeline > li {
-    min-height: 500px;
+    min-height: 300px;
   }
   .timeline > li .timeline-panel {
     float: left;
-    width: 35%;
-    /* padding: 0 20px 20px 30px; */
+    width: 50%;
     text-align: right;
     padding: 0 20px 0 20px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     /* width: 100%; */
-    width: 35%;
-    padding: 0 30px 20px 20px;
+    width: 50%;
+    /* padding: 0 30px 20px 20px; */
+    padding: 0 20px;
     text-align: left;
   }
 
   .timeline > li .timeline-image {
     width: 320px;
     height: 240px;
-    margin-left: -160px;
+    /* margin-left: -160px; */
+    margin-left: 0px;
+  }
+  .timeline > li.timeline-inverted > .timeline-image {
+    width: 320px;
+    height: 240px;
+    /* margin-left: -160px; */
+    margin-left: -320px;
   }
   .timeline > li .timeline-image h4,
   .timeline > li .timeline-image .h4 {
@@ -12272,11 +12285,20 @@ header.masthead .masthead-heading {
   }
   .timeline > li {
     min-height: 170px;
+    margin-bottom: 150px;
   }
   .timeline > li .timeline-panel {
-    padding: 0 20px 20px 0;
+    padding: 20px 20px 0 0;
+    float: left;
+    width: 35%;
+    text-align: right;
   }
   .timeline > li .timeline-image {
+    width: 350px;
+    height: 240px;
+    margin-left: -175px;
+  }
+  .timeline > li.timeline-inverted > .timeline-image {
     width: 350px;
     height: 240px;
     margin-left: -175px;
@@ -12286,7 +12308,10 @@ header.masthead .masthead-heading {
     margin-top: 40px;
   }
   .timeline > li.timeline-inverted > .timeline-panel {
-    padding: 0 0 20px 20px;
+    float: right;
+    /* width: 100%; */
+    width: 35%;
+    padding: 20px 0 0 20px;
   }
 }
 /* .team-member {
